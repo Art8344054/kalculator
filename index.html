@@ -146,14 +146,14 @@
 			let inpValue = inp.value
 			let perevodBrokeru1 = (kursString + 4) * inpValue;
 			let perevodBrokeru2 = ((perevodBrokeru1 * 6.5 / 100) + perevodBrokeru1 + (30*(kursString + 4)));
-			out2.textContent = perevodBrokeru2.Math.ceil(num / 10) * 10;
+			out2.textContent = Math.ceil(perevodBrokeru2 / 10) * 10;
 		}
 
 
 		function transport(kursString) {
 			let inpValue2 = inp2.value
 			let perevodTransportoi = ((kursString + (kursString * 4 / 100)) * inpValue2)
-			out3.textContent = perevodTransportoi.Math.ceil(num / 10) * 10;
+			out3.textContent = Math.ceil(perevodTransportoi / 10) * 10;
 		}
 
 
