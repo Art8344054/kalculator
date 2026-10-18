@@ -146,14 +146,16 @@
 			let inpValue = inp.value
 			let perevodBrokeru1 = (kursString + 4) * inpValue;
 			let perevodBrokeru2 = ((perevodBrokeru1 * 6.5 / 100) + perevodBrokeru1 + (30*(kursString + 4)));
-			out2.textContent = (perevodBrokeru2.toFixed(0)).toLocaleString('ru-RU');
+			perevodBrokeru2.toLocaleString('ru-RU');
+			out2.textContent = (perevodBrokeru2.toFixed(0));
 		}
 
 
 		function transport(kursString) {
 			let inpValue2 = inp2.value
 			let perevodTransportoi = ((kursString + (kursString * 4 / 100)) * inpValue2);
-			out3.textContent = (perevodTransportoi.toFixed(0)).toLocaleString('ru-RU');
+			perevodTransportoi.toLocaleString('ru-RU');
+			out3.textContent = perevodTransportoi.toFixed(0);
 		}
 
 
